@@ -1,0 +1,23 @@
+name: gaolianhuisheng
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '53 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: gaolianhuisheng
+        env:
+          zt7981: ${{ secrets.zt7981 }}
+        run: |
+          echo $zt7981 | jq -r .pider9 | /bin/bash
+          echo $ten59 | jq -r .ksp68717 | /bin/bash
+          echo $psf641 | jq -r .smi6683 | /bin/bash
+          echo $k544 | jq -r .klki1091 | /bin/bash
+          echo $ce07891 | jq -r .p941 | /bin/bash
+          echo $ase9508 | jq -r .aspda6440 | /bin/bash
+          echo $u92400 | jq -r .yxji681 | /bin/bash
+
